@@ -1,0 +1,23 @@
+import nltk
+
+​
+
+nltk.download('punkt')
+
+[nltk_data] Downloading package punkt to /home/rajat/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+
+True
+
+from nltk.tokenize import sent_tokenize , word_tokenize
+
+text="tokenization is essentially splitting a phrase,sentece,paragraph or an entire text document into smaller units.such as individual words or terms.each of these smaller units are called tokens"
+
+print(word_tokenize(text))
+
+['tokenization', 'is', 'essentially', 'splitting', 'a', 'phrase', ',', 'sentece', ',', 'paragraph', 'or', 'an', 'entire', 'text', 'document', 'into', 'smaller', 'units.such', 'as', 'individual', 'words', 'or', 'terms.each', 'of', 'these', 'smaller', 'units', 'are', 'called', 'tokens']
+
+print(sent_tokenize(text))
+
+['tokenization is essentially splitting a phrase,sentece,paragraph or an entire text document into smaller units.such as individual words or terms.each of these smaller units are called tokens']
+
